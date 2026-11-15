@@ -21,10 +21,10 @@
 ;	Verifizierte Messpunkte (CCPR1L=0x83, CCP1CON=0x0C konstant):            *
 ;	  PR2=0x03 -> 1,20 A                                                     *
 ;	  PR2=0x05 -> 0,89 A                                                     *
+;	  PR2=0x06 -> 0,80 A                                                     *
 ;	  PR2=0x07 -> 0,63 A                                                     *
 ;	-> Lineare Interpolation:                                                *
 ;	  PR2=0x04 -> ~1,00 A                                                    *
-;	  PR2=0x06 -> ~0,76 A                                                    *
 ;                                                                           *
 ;	Original Microchip Software License Agreement gilt weiterhin.           *
 ;                                                                           *
@@ -48,9 +48,9 @@
 ; |  die anderen beiden auskommentieren.                                    |
 ; +-----------------------------------------------------------------------+
 
-CHARGE_LEVEL  EQU  0    ; 0,8 A   (PR2 = 0x06)
-;CHARGE_LEVEL  EQU  1    ; 0,9 A   (PR2 = 0x05)  <-- Default, verifiziert
-;CHARGE_LEVEL  EQU  2    ; 1,0 A   (PR2 = 0x04) NUR MIT AKTIVER KÜHLUNG!!!
+;CHARGE_LEVEL  EQU  0    ; 0,8 A   (PR2 = 0x06)
+CHARGE_LEVEL  EQU  1    ; 0,9 A   (PR2 = 0x05)  <-- Default, verifiziert
+;CHARGE_LEVEL  EQU  2    ; 1,0 A   (PR2 = 0x04) NUR MIT AKTIVER KUEHLUNG!!!
 
 
 ;****************************************************************************
